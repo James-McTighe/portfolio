@@ -1,54 +1,42 @@
-import React from 'react';
-
+import Projects from "./components/Projects";
+import './App.css';
 // Main App Component
 function App() {
   return (
     <div style={{ fontFamily: 'Arial, sans-serif', color: '#333', lineHeight: '1.6' }}>
       {/* Navigation */}
-      <nav style={styles.nav}>
-        <h1>My Portfolio</h1>
-        <div>
-          <a href="#about" style={styles.navLink}>About</a>
-          <a href="#projects" style={styles.navLink}>Projects</a>
-          <a href="#contact" style={styles.navLink}>Contact</a>
-        </div>
+      <nav className="App-header">
+        <h1>James McTighe M.S.</h1>
       </nav>
 
-      {/* Hero Section */}
+      {/* About Section */}
       <header id="about" style={styles.hero}>
-        <h2>Hi, I'm [Your Name]</h2>
-        <p>A Full-Stack Developer specializing in React and modern web technologies.</p>
-        <button style={styles.button}>View My Work</button>
+        <h2>Hi, I'm James!</h2>
+        <p>A scientific software develop specilizing in Machine Learning and Computational Methods.</p>
+        <p>Currently, I'm working as a Software Engineering Intern at OPENLANE, building a React / Next.js application for vehicle remarketing.</p>
+        <a href="https://github.com/james-mctighe">
+          <button style={styles.button}>View My Work</button>
+        </a>
       </header>
 
       {/* Projects Section */}
       <section id="projects" style={styles.section}>
         <h3>Featured Projects</h3>
         <div style={styles.grid}>
-          <ProjectCard title="Project One" description="A cool React app." link="#" />
-          <ProjectCard title="Project Two" description="An e-commerce site." link="#" />
-          <ProjectCard title="Project Three" description="A weather dashboard." link="#" />
+          <Projects />
         </div>
       </section>
 
       {/* Contact Section */}
       <footer id="contact" style={styles.footer}>
         <h3>Get In Touch</h3>
-        <p>Email: yourname@example.com</p>
-        <p>© 2025 [Your Name]</p>
+        <p>Email: james.mctighe97@gmail.com</p>
+        <p>© 2025 James McTighe</p>
       </footer>
     </div>
   );
 }
 
-// Sub-component for Project Cards
-const ProjectCard = ({ title, description, link }) => (
-  <div style={styles.card}>
-    <h4>{title}</h4>
-    <p>{description}</p>
-    <a href={link} style={{ color: '#007bff' }}>View GitHub</a>
-  </div>
-);
 
 // Basic inline styles (Use Tailwind CSS for a 2025 modern look!)
 const styles = {
