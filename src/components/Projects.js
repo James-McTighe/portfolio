@@ -42,7 +42,7 @@ export default function Projects() {
 
   return (
     <Box sx={{ width: '100%' }}>
-      <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
+      <Box sx={{ borderBottom: 1, borderColor: 'divider', justifySelf: 'center' }}>
         <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
           <Tab label="RNA Classification" {...a11yProps(0)} />
           <Tab label="CNDO/2 Vibration Analysis" {...a11yProps(1)} />

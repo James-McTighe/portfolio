@@ -12,8 +12,8 @@ function App() {
       {/* About Section */}
       <header id="about" style={styles.hero}>
         <h2>Hi, I'm James!</h2>
-        <p>A scientific software develop specilizing in Machine Learning and Computational Methods.</p>
-        <p>Currently, I'm working as a Software Engineering Intern at OPENLANE, building a React / Next.js application for vehicle remarketing.</p>
+        <p>A scientific software developer specializing in Machine Learning and Computational Methods.</p>
+        <p>Currently, I'm working as a Software Engineering Intern at OPENLANE, building React / Next.js applications for vehicle remarketing.</p>
         <a href="https://github.com/james-mctighe">
           <button style={styles.button}>View My Work</button>
         </a>
