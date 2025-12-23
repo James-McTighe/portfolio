@@ -50,13 +50,13 @@ export default function Projects() {
         </Tabs>
       </Box>
       <CustomTabPanel value={value} index={0}>
-        Item One
+        Created a machine learning Pipeline for classifying RNA strands based on Host ID
       </CustomTabPanel>
       <CustomTabPanel value={value} index={1}>
-        Item Two
+        Ab initio simulation designed to compute vibrational frequencies of Molcules.
       </CustomTabPanel>
       <CustomTabPanel value={value} index={2}>
-        Item Three
+        Classified Natural Disaster Satellite images based on severity and type.
       </CustomTabPanel>
     </Box>
   );
