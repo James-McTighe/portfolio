@@ -10,25 +10,25 @@ function App() {
       </nav>
 
       {/* About Section */}
-      <header id="about" style={styles.hero}>
+      <header id="about" className="Hero">
         <h2>Hi, I'm James!</h2>
         <p>A scientific software developer specializing in Machine Learning and Computational Methods.</p>
         <p>Currently, I'm working as a Software Engineering Intern at OPENLANE, building React / Next.js applications for vehicle remarketing.</p>
         <a href="https://github.com/james-mctighe">
-          <button style={styles.button}>View My Work</button>
+          <button>View My Work</button>
         </a>
       </header>
 
       {/* Projects Section */}
-      <section id="projects" style={styles.section}>
+      <section id="projects">
         <h3>Featured Projects</h3>
-        <div style={styles.grid}>
+        <div className="grid">
           <Projects />
         </div>
       </section>
 
       {/* Contact Section */}
-      <footer id="contact" style={styles.footer}>
+      <footer id="contact" >
         <h3>Get In Touch</h3>
         <p>Email: james.mctighe97@gmail.com</p>
         <p>© 2025 James McTighe</p>
@@ -36,19 +36,6 @@ function App() {
     </div>
   );
 }
-
-
-// Basic inline styles (Use Tailwind CSS for a 2025 modern look!)
-const styles = {
-  nav: { display: 'flex', justifyContent: 'space-between', padding: '1rem 5%', background: '#f8f9fa', borderBottom: '1px solid #ddd' },
-  navLink: { margin: '0 10px', textDecoration: 'none', color: '#333' },
-  hero: { padding: '100px 5%', textAlign: 'center', background: '#e9ecef' },
-  section: { padding: '50px 5%' },
-  grid: { display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '20px' },
-  card: { padding: '20px', border: '1px solid #ddd', borderRadius: '8px', textAlign: 'center' },
-  button: { padding: '10px 20px', background: '#007bff', color: '#fff', border: 'none', borderRadius: '5px', cursor: 'pointer' },
-  footer: { padding: '30px 5%', textAlign: 'center', background: '#343a40', color: '#fff' }
-};
 
 export default App;
 
